@@ -1,4 +1,7 @@
 @import "tailwindcss";
 
 
-*{font-family: Outfit;}
+*{font-family: Outfit;
+}
+
+body{background-color: #100f0f;}
