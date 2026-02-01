@@ -6,39 +6,37 @@ function About() {
   return (
     <div id="about" className="w-full px-[12%] py-10 scroll-mt-20 pt-18">
       
-      <h2 className="text-center text-5xl text-white">Sobre</h2>
+      <h2 className="text-center text-5xl text-white mb-[-30] ">Sobre</h2>
 
       <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
-        <div className=" w-64 sm:w-70 rounded-3xl max-w-none">
+        <div className=" w-64 sm:w-84 max-w-none">
           <Image
             src={assets.profile_img}
             alt=""
-            className="w-full rounded-3xl"
+            className="w-full mb-40"
           />
         </div>
 
         <div className="flex-1">
-          <p className="mb-10 max-w-2xl text-white">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industrys standard dummy Lorem
-            Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industrys standard dummy
+          <p className="mb-10 max-w-2xl text-gray-200  text-[22px] leading-10">
+            Desenvolvedora Full Stack em formação, cursando Análise e Desenvolvimento de Sistemas. Possuo conhecimentos práticos em front-end (React, Next.js, Angular) e back-end (Node.js, Python), além de experiência com controle de versão (Git/GitHub) e conceitos de POO.
+            Com perfil analítico e facilidade de comunicação, busco atuar em projetos desafiadores que permitam o desenvolvimento de aplicações web responsivas e escaláveis, contribuindo ativamente para a entrega de soluções de qualidade.
           </p>
 
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
-            {infoList.map(({ icon, iconDark, title, description }, index) => (
+            {infoList.map(({ iconDark, title, description }, index) => (
               <li
                 key={index}
                 className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-gray-700 hover:-translate-y-2 duration-500 hover:shadow-[-4px_4px_8px_var(--color-gray-500)] "
               >
-                <Image src={icon} alt={title} className="w-7 mt-3" />
+                <Image src={iconDark} alt={title} className="w-7 mt-3" />
                 <h3 className="my-4 font-semibold text-gray-100"> {title} </h3>
                 <p className="text-gray-400 text-sm"> {description} </p>
               </li>
             ))}
           </ul>
 
-          <h4 className="my-6 text-gray-100 ">Ferramentas</h4>
+          <h2 className="my-6 text-gray-100 text-[20px] ">Ferramentas</h2>
 
           <ul className="flex items-center gap-3 sm:gap-5">
 

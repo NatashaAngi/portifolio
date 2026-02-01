@@ -31,15 +31,16 @@ function Navbar() {
 
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 text-white border border-gray-500 ${isScroll ? "": 'bg-[#1c1c1c]/90 ' } `}>
 
-            <li><a href='#top' >Pagina inicial </a></li>
-            <li><a href='#about'> Sobre </a></li>
-            <li><a href='#work'> Projetos </a></li>
-            <li><a href='#contact'>Contato</a></li>
+            <li><a href='#top' className=' hover:text-blue-700 hover:underline'>Pagina inicial </a></li>
+            <li><a href='#about' className=' hover:text-blue-700 hover:underline' > Sobre </a></li>
+            <li><a href='#work' className=' hover:text-blue-700 hover:underline'> Projetos </a></li>
+            <li><a href='#contact' className=' hover:text-blue-700 hover:underline'>Contato</a></li>
 
         </ul>
 
-        <div className='flex items-center gap-4'>
-          <a href='#contact' className='hidden lg:flex items-center gap-3 px-10 border border-gray-500 rounded-full ml-4 mr-4 bg-[#1c1c1c]/90 text-white' > Contact <Image src={assets.arrow_icon} className='w-3' alt=''/></a>
+        <div className='flex items-center gap-4 border border-gray-500  hover:-translate-y-2 duration-500 hover:shadow-[-4px_4px_8px_var(--color-gray-500)]  rounded-full '>
+
+          <a href='#contact' className='hidden lg:flex items-center gap-3 px-10  rounded-full ml-4 mr-4 bg-[#1c1c1c]/90 text-white' > Contact <Image src={assets.arrow_icon_dark} className='w-3' alt=''/></a>
         </div>
 
         <button className='block md:hidden ml-3 ' onClick={openMenu}>
@@ -48,12 +49,12 @@ function Navbar() {
 
         {/* MENU MOBILE */}
 
-        <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-[#1c1c1c] transition duration-500'>
+        <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-[#1c1c1c] transition duration-500 '>
 
             <div className='absolute right-6 top-6' onClick={closeMenu}>
                 <Image src={assets.close_white} alt='' className='w-5 cursor-pointer'/>
             </div>
-            <li><a href='#top'  onClick={closeMenu}>Pagina inicial </a></li>
+            <li ><a href='#top'  onClick={closeMenu}>Pagina inicial </a></li>
             <li><a href='#about' onClick={closeMenu}> Sobre </a></li>
             <li><a href='#work' onClick={closeMenu}> Projetos </a></li>
             <li><a href='#contact' onClick={closeMenu}>Contato</a></li>
