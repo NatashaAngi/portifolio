@@ -25,11 +25,12 @@ function Navbar() {
    </div>
    
     <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex  items-center justify-between z-50 bg-[#121212]/60 text-white '>
+
         <a href='#top'>
           <Image src={assets.logo} className='w-29 cursor-pointer mr-14 ml-14' alt=''/>
         </a>
 
-        <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 text-white border border-gray-500 ${isScroll ? "": 'bg-[#1c1c1c]/90 ' } `}>
+        <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 text-gray-200   hover:text-blue-200 border border-gray-500 hover:border-blue-900 ${isScroll ? "": 'bg-[#1c1c1c]/90 ' } `}>
 
             <li><a href='#top' className=' hover:text-blue-700 hover:underline'>Pagina inicial </a></li>
             <li><a href='#about' className=' hover:text-blue-700 hover:underline' > Sobre </a></li>
@@ -38,9 +39,9 @@ function Navbar() {
 
         </ul>
 
-        <div className='flex items-center gap-4 border border-gray-500  hover:-translate-y-2 duration-500 hover:shadow-[-4px_4px_8px_var(--color-gray-500)]  rounded-full '>
+        <div className='flex items-center gap-4 text-gray-200  hover:text-blue-200 border border-gray-500 hover:border-blue-900 rounded-full hover:-translate-y-2 duration-500 '>
 
-          <a href='#contact' className='hidden lg:flex items-center gap-3 px-10  rounded-full ml-4 mr-4 bg-[#1c1c1c]/90 text-white' > Contact <Image src={assets.arrow_icon_dark} className='w-3' alt=''/></a>
+          <a href='#contact' className='hidden lg:flex items-center gap-3 px-10  rounded-full ml-4 mr-4 bg-[#1c1c1c]/90 text-gray-200 hover:text-blue-200 ' > Contato <Image src={assets.arrow_icon_dark} className='w-3' alt=''/></a>
         </div>
 
         <button className='block md:hidden ml-3 ' onClick={openMenu}>
