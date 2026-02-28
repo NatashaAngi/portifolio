@@ -35,7 +35,7 @@ function Navbar() {
             <li><a href='#top' className=' hover:text-blue-700 hover:underline'>Pagina inicial </a></li>
             <li><a href='#about' className=' hover:text-blue-700 hover:underline' > Sobre </a></li>
             <li><a href='#work' className=' hover:text-blue-700 hover:underline'> Projetos </a></li>
-            <li><a href='#contact' className=' hover:text-blue-700 hover:underline'>Contato</a></li>
+            
 
         </ul>
 
